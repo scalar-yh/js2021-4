@@ -50,3 +50,29 @@ switch (input %2) {
 		break;
 }
 ```
+## 4.반복문
+
+[배열]
+
+배열은 여러 자료를 한번에 다룰 수 있는 자료형. 선언 형태는 아래와 같다.
+
+```jsx
+>let 이름 = [자료,자료,자료,자료]
+```
+
+다음과 같은 예제를 입력한 뒤, array를 입력하면 [52, 73, '아침밥', '점심밥', true, false] 가 출력된다.
+
+```jsx
+>let array = [52, 73, '아침밥', '점심밥', true, false]
+	undefined
+>array
+	[52, 73, '아침밥', '점심밥', true, false]
+```
+
+## type script 관련 오류
+
+react native project를 개발하다보면 이런 오류가 발생한다.
+
+vs code → file → preferences → settings → javaScript validate → disable상태
+
+typescript가 아닌 javascript에만 해제.
