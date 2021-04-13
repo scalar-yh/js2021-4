@@ -3,7 +3,7 @@
 <p>
 <h2>[21.03.30일 강의 정리]
 
-## 중첩 조건문
+## 중첩 조건
 
 조건문 안에 또 다른 조건문을 중첩 시키는 경우. 
 
@@ -82,3 +82,5 @@ react native project를 개발하다보면 이런 오류가 발생한다.
 vs code → file → preferences → settings → javaScript validate → disable상태
 
 typescript가 아닌 javascript에만 해제.
+
+## 5.함수
