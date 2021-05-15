@@ -27,7 +27,50 @@ callThreeTimes(function () {
 callThreeTimes();
 ```
 
-### 기본예외처리<br>사전에 해당 데이터가 undefined인지 조건문으로 확인.
+### [기본예외처리]<br>사전에 해당 데이터가 undefined인지 조건문으로 확인.
+```jsx
+//함수선언
+function callThreeTimes(callback) {
+	if (callback) {
+		for (let i = 0; i < 10; i++) {
+			callback();
+	}
+} else {
+	console.log("매개변수 callback이 지정되지 않았습니다.");
+	}
+}
+//정상실행
+callThreeTimes(function () {
+	console.log("안녕하세요");
+});
+//예외발생
+callThreeTimes();
+```
+### try catch finally 구문
+```jsx
+try {
+	//예외가 발생
+} catch (exception) {
+	//처리 시작
+} finally {
+	//무조건적인 처리 실행
+}
+```
+
+### catch 구문 / finally 구문은 생략이 가능하다?
+```jsx
+try {
+	//예외가 발생
+} catch (exception) {
+	//처리 시작
+}
+혹은
+try {
+	//예외가 발생
+} finally {
+	//무조건적인 처리 실행
+}
+```
 
 
 
