@@ -27,7 +27,8 @@ callThreeTimes(function () {
 callThreeTimes();
 ```
 
-### [기본예외처리]<br>사전에 해당 데이터가 undefined인지 조건문으로 확인.
+### [기본예외처리]
+사전에 해당 데이터가 undefined인지 조건문으로 확인.
 ```jsx
 //함수선언
 function callThreeTimes(callback) {
@@ -71,6 +72,32 @@ try {
 	//무조건적인 처리 실행
 }
 ```
+
+### [고급 예외 처리-예외상황 확인]
+배열 생성시 길이를 음수로 지정하면 RangeError 발생.
+```jsx
+//예외를 발생시킨다
+>const array = new Array(-2000);
+>RangeError : Invalid array length
+```
+### [고급 예외 처리-try catch finally구문 활용]
+```jsx
+try {
+	//예외가 발생
+	const array = new Array(-2000);
+} catch (exception) {
+	console.log(`${exception.name} 예외가 발생했습니다.`);
+} finally {
+	console.log('finally 구문이 실행되었습니다.');
+}
+
+>RangeError 예외가 발생했습니다.
+finally 구문이 실행되었습니다.
+```
+### [예외객체]
+*예외가 발생하면 어떤 예외가 발생했는지 정보 전달
+*catch 구문의 괄호 안의 변수
+*name속성과 message속성 존재
 
 
 
