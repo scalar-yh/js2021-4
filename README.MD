@@ -1,6 +1,33 @@
 <!--강의내용-->
 <h1>스크립트프로그래밍 정리
 <p>
+<h2>[21.05.11일 강의 정리]
+## 예외처리
+[예외와 기본 예외처리]
+# 예외란? => 실행에 문제가 발생할 경우, 자동 중단되는데 이렇게 발생한 오류를 뜻함.
+# 예외처리 => 오류에 대처할 수 있도록 하는 것.
+[TypeError 기본 예외 처리 예제]
+undefined 자료형을 일반적 객체 / 함수처럼 다루면 TypeError 예외가 발생함.
+```jsx
+//함수선언
+function callThreeTimes(callback) {
+	for (let i = 0; i < 3; i++) {
+		callback();
+	}
+}
+//정상실행
+callThreeTimes(function () {
+	console.log("안녕하세요");
+});
+//예외발생
+callThreeTimes();
+
+
+
+
+
+
+
 <h2>[21.04.13일 강의 정리]
 
 ## 함수
