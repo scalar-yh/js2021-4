@@ -21,6 +21,8 @@ callThreeTimes(function () {
 });
 //예외발생
 callThreeTimes();
+```
+# 기본예외처리 : 사전에 해당 데이터가 undefined인지 조건문으로 확인.
 
 
 
