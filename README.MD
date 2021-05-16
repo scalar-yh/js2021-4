@@ -95,9 +95,54 @@ try {
 finally 구문이 실행되었습니다.
 ```
 ### [예외객체]
-*예외가 발생하면 어떤 예외가 발생했는지 정보 전달
-*catch 구문의 괄호 안의 변수
-*name속성과 message속성 존재
+*예외가 발생하면 어떤 예외가 발생했는지 정보 전달<br>
+*catch 구문의 괄호 안의 변수<br>
+*name속성과 message속성 존재<br>
+
+### ReferenceError후에 예외객체의 name속성과 message속성을 출력함
+```jsx
+try {
+	error.error.error();
+} catch (e) {
+	console.log(e.name);
+	console.log(e.message);
+}
+
+>ReferenceError
+error is not defined
+```
+
+### [예외강제발생]
+* throw키워드 사용 
+* throw키워드 뒤에는 문자열 혹은 Error객체 입력
+```jsx
+throw '강제예외';
+```
+
+### 자세한 예외출력은 Error객체를 사용한다
+```jsx
+//예외객체를 만듭니다
+const error = new Error('message');
+error.name = 'Error No.1';
+error.message = 'Error`s Message';
+//예외를 발생시킵니다
+throw error;
+```
+
+*문자열을 사용할 때는 catch구문의 예외 객체에 간단한 문자열만 전달된다
+```jsx
+try {
+	//예외를 강제로 발생
+	throw '예외가 발생했습니다';
+} catch (exception) {
+	//예외객체를 출력
+	console.log("예외가 발생했습니다.");
+	console.log("exception");
+}
+
+>예외가 발생했습니다.
+exception
+```
 
 
 
