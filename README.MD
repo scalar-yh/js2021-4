@@ -3,11 +3,20 @@
 <p>
 
 <h2>[21.05.18일 강의 정리]
-	- 5주차
 
-    hhh
+## 전역변수
+### 전역변수, 전역함수, 전역객체 : 모든 곳에서 사용 가능한 것들
+__filename => 현재 실행중인 코드의 파일 경로를 나타냅니다<br>
+__dirname => 현재 실행중인 코드의 폴더 경로를 나타냅니다<br>
+```jsx
+console.log(__filename);
+console.log(__dirname);
+```
 
-    hhh
+## process 객체의 속성 & 이벤트
+### Node.js는 process 전역 객체를 제공
+
+
 
 <h2>[21.05.11일 강의 정리]
 
