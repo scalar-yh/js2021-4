@@ -15,15 +15,15 @@ console.log(__dirname);
 
 ## process 객체의 속성 & 이벤트
 ### Node.js는 process 전역 객체를 제공
-** env => 컴퓨터의 환경정보를 나타냅니다
-** version => node.js의 버전을 나타냅니다
-** versions => node.js와 종소된 프로그램의 버전을 나타냅니다
-** arch => 프로세서의 아키택쳐를 나타냅니다
-** platform => 플랫폼을 나태냅니다
-
-** exit([exitCode=0]) => 프로그램을 종료합니다
-** memoryUsage() => 메모리 사용정보 객체를 리턴합니다
-** uptime() => 현재 프로그램이 실행된 시간을 리턴합니다
+** env => 컴퓨터의 환경정보를 나타냅니다<br>
+** version => node.js의 버전을 나타냅니다<br>
+** versions => node.js와 종소된 프로그램의 버전을 나타냅니다<br>
+** arch => 프로세서의 아키택쳐를 나타냅니다<br>
+** platform => 플랫폼을 나태냅니다<br>
+<br>
+** exit([exitCode=0]) => 프로그램을 종료합니다<br>
+** memoryUsage() => 메모리 사용정보 객체를 리턴합니다<br>
+** uptime() => 현재 프로그램이 실행된 시간을 리턴합니다<br>
 
 
 
