@@ -90,8 +90,50 @@ for (var i = 0; i < array.length; i++) {
 ### window 객체 : 웹 페이지 그 자체를 상징.
 * 새로운 화면을 열거나 웹 브라우저의 크기를 변경하는 등의 일
 * 대표적으로 경고 출력을 하는 경고창과 입력을 하는 프롬프트 제공
->alter(<message>) --------------> 경고창을 출력
->prompt(<message>, <임시글자>)---> 프롬프트를 출력
+
+>alert(<message>) --------------> 경고창을 출력<br>
+>prompt(<message>, <임시글자>)---> 프롬프트를 출력<br>
+
+### 예제:경고와 입력
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>alert and prompt</title>
+		<script>
+			//입력을 받습니다.
+			var input = prompt('글자를 입력해주세요 ', '여기에 입력하세요 : ');
+
+			//출력합니다.
+			alert(input);
+		</script>
+	</head>
+</html>
+```
+
+## screen 객체
+### 웹 브라우저에서 공통으로 활용할 수 있는 속성
+
+1. width ==> 화면의 너비
+2. height ==> 화면의 높이
+3. availWidth ==> 실제 화면에서 사용 가능한 너비
+4. availHeight ==> 실제 화면에서 사용 가능한 높이
+5. colorDepth ==> 사용 가능한 색상 수
+6. pixelDepth ==> 한 픽셀당 비트 수
+
+## location 객체와 history 객체
+### 웹 브라우저에서 공통으로 사용 가능한 속성
+
+1. href : 문서의 url주소
+2. host : 호스트 이름과 포트번호
+3. hostname : 호스트 이름
+4. port : 포트번호
+5. pathname : 디렉터리 경로
+6. hash : 앵커이름(#~)
+7. search : 요청 매개변수
+8. protocol : 프로토콜 종류
+
 <br>
 
 
