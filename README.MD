@@ -2,6 +2,65 @@
 <h1>스크립트프로그래밍 정리
 <p>
 
+<h2>[21.06.01일 강의 정리]
+## let키워드 & const키워드
+### 최신버전의 JS Code
+```jsx
+let variable = 273;
+const constant = "Hello";
+```
+<br>
+### IE에서의 Code 
+```jsx
+var variableA = 273;
+var variable = "Hello";
+```
+<br>
+## 템플릿 문자열
+### 최신버전의 JS Code
+```jsx
+let variable = 273;
+console.log("변수값은 ${variable} 이다");
+```
+<br>
+### IE에서의 Code 
+```jsx
+var variableA = 273;
+console.log("변수값은" +variable+"이다");
+```
+<br>
+## 사용 불가능한 코드
+### 화살표 함수
+### 최신버전의 JS Code
+```jsx
+const functionLiteral = () => {
+
+};
+```
+### IE에서의 Code
+```jsx
+const functionLiteral = () => {
+
+};
+```
+### for of 반복문
+### 최신버전의 JS Code
+```jsx
+const array = ['가', '나', '다'];
+for (let item of array) {
+	console.log(item);
+}
+```
+### IE에서의 Code
+```jsx
+var array = ['가', '나', '다'];
+for (var item in array) {
+	console.log(array[i]);
+}
+```
+<br>
+
+
 <h2>[21.05.18일 강의 정리]
 
 ## 전역변수
