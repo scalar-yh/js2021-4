@@ -65,6 +65,33 @@ for (var item in array) {
 	console.log(array[i]);
 }
 ```
+
+### 사용할수 없는 메소드를 사용한 코드
+### 최신버전의 JS Code
+
+```jsx
+const array = [1, 2, 3, 4, 5];
+array.forEach(item, index) => {
+	console.log('${item}: ${index}');
+});
+```
+### IE에서의 Code
+
+```jsx
+var array = [1,2,3,4,5];
+for (var i = 0; i < array.length; i++) {
+	var index - i;
+	var item = arrat[i];
+	console.log(item + ' : '+index);
+}
+```
+
+## Window 객체
+### window 객체 : 웹 페이지 그 자체를 상징.
+* 새로운 화면을 열거나 웹 브라우저의 크기를 변경하는 등의 일
+* 대표적으로 경고 출력을 하는 경고창과 입력을 하는 프롬프트 제공
+	alter(<message>) --------------> 경고창을 출력
+	prompt(<message>, <임시글자>)---> 프롬프트를 출력
 <br>
 
 
