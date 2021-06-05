@@ -10,29 +10,32 @@
 let variable = 273;
 const constant = "Hello";
 ```
-<br>
+
 ### IE에서의 Code 
 ```jsx
 var variableA = 273;
 var variable = "Hello";
 ```
-<br>
+
 ## 템플릿 문자열
 ### 최신버전의 JS Code
+
 ```jsx
 let variable = 273;
 console.log("변수값은 ${variable} 이다");
 ```
-<br>
+
 ### IE에서의 Code 
+
 ```jsx
 var variableA = 273;
 console.log("변수값은" +variable+"이다");
 ```
-<br>
+
 ## 사용 불가능한 코드
 ### 화살표 함수
 ### 최신버전의 JS Code
+
 ```jsx
 const functionLiteral = () => {
 
@@ -44,8 +47,10 @@ const functionLiteral = () => {
 
 };
 ```
+
 ### for of 반복문
 ### 최신버전의 JS Code
+
 ```jsx
 const array = ['가', '나', '다'];
 for (let item of array) {
@@ -53,6 +58,7 @@ for (let item of array) {
 }
 ```
 ### IE에서의 Code
+
 ```jsx
 var array = ['가', '나', '다'];
 for (var item in array) {
