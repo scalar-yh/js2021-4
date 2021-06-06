@@ -134,6 +134,87 @@ for (var i = 0; i < array.length; i++) {
 7. search : 요청 매개변수
 8. protocol : 프로토콜 종류
 
+### 메소드
+
+1. assign(<링크>) : 매개변수로 전달한 위치로 이동합니다
+2. reload() : 새로고침합니다
+3. replace() : 매개변수로 전달한 위치로 이동합니다
+
+### 페이지 이동
+
+1. assign()메소드
+2. replace()메소드 : 뒤로가기 버튼 사용 불가능
+
+```jsx
+location = 'http://hgggg.co.kr';
+location.href = 'http://hgggg.co.kr';
+location.assign('http://hgggg.co.kr');
+location.replace('http://hgggg.co.kr');
+```
+
+### location 객체를 사용한 페이지 이동 예제
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Location</title>
+		<script>
+			//3 sec after
+			setInterval(function () {
+				location = 'http://hgggg.co.kr';
+			}, 3000);
+		</script>
+	</head>
+</html>
+```
+
+### history 객체의 메소드
+
+1. forward() : 앞으로 이동
+2. back() : 뒤로 이동
+
+## navigator 객체
+### 웹 페이지를 실행하는 웹 브라우저 정보가 들어있다
+### 사용자의 웹 브라우저, OS를 구분할 수 있다
+
+1. appCodeName : 웹 브라우저의 코드 이름
+2. appName : 웹 브라우저의 이름
+3. appVersion : 웹 브라우저의 버전
+4. platform : 사용중인 OS의 시스템 환경
+5. userAgent : 웹 브라우저의 전체적인 정보
+
+### Desktop 웹 브라우저와 Phone 웹 브라우저 구분 예제
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Location</title>
+		<script>
+			// navigator 객체의 속성 출력
+			var output = '';
+			output += 'appCodeName: ' + navigator.appCodeName + '\n';
+			output += 'appName: ' + navigator.appName + '\n';
+			output += 'appVersion: ' + navigator.appVersion + '\n';
+			output += 'platform: ' + navigator.platform + '\n';
+			output += 'userAgent: ' + navigator.userAgent + '\n';		
+			alert(output);
+			// ios & android 웹 브라우저 구분
+			if (navigator.userAgent.toLowerCase().indexOf('iphone') >= 0,
+				navigator.userAgent.toLowerCase().indexOf('ipad') >= 0,
+				navigator.userAgent.toLowerCase().indexOf('ipod') >= 0,
+				navigator.userAgent.toLowerCase().indexOf('android') >= 0) {
+					alert('모바일 웹 브라우저 입니다.');
+				} else {
+					alert('데스크탑 웹 브라우저 입니다');
+				}
+		</script>
+	</head>
+</html>
+```
+
+
 <br>
 
 
